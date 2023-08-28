@@ -1,0 +1,15 @@
+.badge {
+  background-color: #f2f2f2;
+  padding: 6px 12px;
+  &.active {
+    background-color: #0f0f0f !important;
+    span {
+      color: #fff !important;
+    }
+  }
+  span {
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--yt-clone-color-5);
+  }
+}

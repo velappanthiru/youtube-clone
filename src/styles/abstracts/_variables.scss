@@ -1,0 +1,64 @@
+// ==== Standard Bootstrap Breakpoints ====
+
+$screen-sm: 576px;
+$screen-md: 767px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;
+
+// ==== Custom Breakpoints ====
+
+$screen-alt-363: 363px;
+$screen-alt-480: 480px;
+$screen-alt-768: 768px;
+$screen-alt-1024: 1024px;
+$screen-alt-1350: 1350px;
+$screen-alt-1500: 1500px;
+$screen-alt-1600: 1600px;
+
+// 2560 x 1600
+// 1920 × 1080 (8.89%)
+// 1536 × 864 (3.88%)
+// 1366 × 768 (8.44%)
+// 1024 x 768
+
+// 480 width
+// 375 width
+
+// no use
+// 414×896 (4.58%)
+// 375×667 (3.75%)
+// 360×640 (7.28%)
+
+/*------ font family variable --------
+==================================================*/
+
+$font-family: "Roboto", sans-serif;
+
+
+:root {
+  --yt-clone-color-1 : #ffffff;
+  --yt-clone-color-2 : #ffffff;
+  --yt-clone-color-3 : #f8f8f8;
+  --yt-clone-color-4 : #ccc;
+  --yt-clone-color-5 : #222222;
+  --yt-clone-color-6 : #f0f0f0;
+  --yt-clone-color-7 : #0f0f0f;
+  --yt-clone-color-8 : #606060;
+  --yt-clone-color-9 : #606060;
+  --yt-clone-color-10 : #f2f2f2;
+  --yt-clone-color-11 : #e5e5e5;
+  --yt-clone-color-12 : #f2f2f2;
+  --yt-clone-color-13 : #000;
+  --yt-clone-color-14 : #222;
+  --yt-clone-color-15 : rgba(0,0,0,0.1);
+  --yt-clone-color-16 : #e5e5e5;
+  --yt-clone-color-17 : #909090;
+  --yt-clone-color-18 : #606060;
+  --yt-clone-color-19 : #065fd4;
+  --yt-clone-color-20 : rgba(0,0,0,0.1);
+}
+
+.light-theme {
+
+}

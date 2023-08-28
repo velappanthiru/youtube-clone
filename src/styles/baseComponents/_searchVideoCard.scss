@@ -1,0 +1,105 @@
+.search-video-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  cursor: pointer;
+  margin-bottom: 16px;
+
+  @include media-min-md {
+    flex-direction: row;
+  }
+  .search-video-thumbnail {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    @include media-min-md {
+      width: 360px;
+      height: 200px;
+    }
+    img {
+      border-radius: 10px;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    .time-duration {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 4px;
+      margin: 4px;
+      background-color: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      span {
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 500;
+        color: #ffffff;
+      }
+    }
+  }
+  .search-video-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    @include media-min-md {
+      width: calc(100% - 372px);
+    }
+    h6 {
+      margin: 0;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--yt-clone-color-7);
+      font-weight: 400;
+      @include media-min-sm {
+        font-size: 18px;
+      }
+      @include lineBreak(2);
+    }
+    .views-count-wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 4px;
+      span {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: var(--yt-clone-color-9);
+      }
+    }
+    .channel-info-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      .chl-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      p {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: var(--yt-clone-color-9);
+      }
+    }
+    .desc {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      color: var(--yt-clone-color-9);
+      @include lineBreak(2);
+    }
+  }
+}

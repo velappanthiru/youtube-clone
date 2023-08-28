@@ -1,0 +1,119 @@
+.watch-screen-wrapper {
+  display: flex;
+  padding: 8px 0px;
+  gap: 32px;
+  margin-top: 20px;
+  flex-direction: column;
+  @include media-min-xl {
+    gap: 16px;
+    padding: 8px 16px;
+    flex-direction: row;
+  }
+  .watchScreen-primary-section {
+    width: 100%;
+    @include media-min-xl {
+      padding: 0;
+      width: calc(100% - 26rem);
+    }
+    .yt-video-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .yt-clone-video-player {
+        width: 100%;
+        height: 30vh;
+        @include media-min-md {
+          height: 40vh;
+        }
+        @include media-min-lg {
+          height: 70vh;
+        }
+      }
+    }
+  }
+  .watchScreen-secondary-section {
+    width: 100%;
+    padding: 0 16px;
+    @include media-min-xl {
+      padding: 0;
+      width: 25rem;
+    }
+
+    .recommended-video-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      cursor: pointer;
+      .recommended-video-wrapper {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        @include media-min-sm {
+          flex-direction: row;
+        }
+        @include media-min-max-alt(767px,1200px) {
+          width: calc(50% - 8px);
+        }
+        .recommended-video-thumbnail {
+          width: 100%;
+          border-radius: 8px;
+          overflow: hidden;
+          position: relative;
+          @include media-min-sm {
+            width: 168px;
+            height: 94px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          .time-duration {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 4px;
+            margin: 4px;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            span {
+              font-size: 12px;
+              line-height: 12px;
+              font-weight: 500;
+              color: #ffffff;
+            }
+          }
+        }
+        .recommended-video-content {
+          @include media-min-sm {
+            width: calc(100% - 176px);
+          }
+          h6 {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            color: var(--yt-clone-color-14);
+            @include lineBreak(2);
+          }
+          span {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            color: var(--yt-clone-color-9);
+          }
+          .views-count-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        }
+      }
+    }
+  }
+}

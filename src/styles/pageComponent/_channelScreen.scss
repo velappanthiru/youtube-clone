@@ -1,0 +1,200 @@
+.channel-section-wrapper {
+  .main-channel-wrapper {
+    display: flex;
+    align-items: flex-start;
+    .main-channel-video-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      @include scroll-bar(0.25rem, 0.25rem);
+      @include media-min-xl {
+        width: calc(100% - 15rem);
+      }
+      .yt-channel-banner-wrapper {
+        width: 100%;
+        height: 200px;
+        @include media-min-sm {
+          height: 240px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .yt-clone-channel-page-details-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 0 16px;
+        @include media-min-lg {
+          flex-direction: row;
+          padding: 0 32px;
+        }
+        @include media-min-xl {
+          flex-direction: row;
+          padding: 0 100px;
+        }
+        .yt-channel-profile-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+          @include media-min-md {
+            flex-direction: row;
+          }
+          .yt-channel-profile {
+            display: none;
+            border-radius: 50%;
+            overflow: hidden;
+            @include media-min-md {
+              display: block;
+              width: 120px;
+              height: 120px;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .yt-channel-content-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            @include media-min-md {
+              width: calc(100% - 136px);
+            }
+            .yt-clone-channel-details-header {
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              .channel-name-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                .channel-logo {
+                  width: 48px;
+                  height: 48px;
+                  border-radius: 50%;
+                  overflow: hidden;
+                  @include media-min-md {
+                    display: none;
+                  }
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                .channel-name-content {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 8px;
+                  @include media-min-md {
+                    flex-direction: row;
+                    align-items: center;
+                  }
+                  h5 {
+                    margin: 0;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: var(--yt-clone-color-7);
+                    font-weight: 400;
+                    @include media-min-md {
+                      font-size: 24px;
+                      line-height: 30px;
+                    }
+                  }
+                }
+              }
+
+              .channel-details {
+                display: flex;
+                align-items: flex-start;
+                gap: 4px;
+                span {
+                  font-size: 12px;
+                  line-height: 20px;
+                  font-weight: 400;
+                  color: var(--yt-clone-color-18);
+                  @include media-min-md {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+
+            .description-wrapper {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              p {
+                max-width: calc(100% - 2.25rem);
+                margin: 0;
+                font-size: 12px;
+                line-height: 20px;
+                font-weight: 400;
+                color: var(--yt-clone-color-18);
+                @include media-min-md {
+                  font-size: 14px;
+                }
+                @include lineBreak(1);
+              }
+              .icon {
+                width: 1.5rem;
+                height: 1.5rem;
+                svg {
+                  width: 1.25rem;
+                  height: 1.25rem;
+                }
+              }
+            }
+
+            .yt-about-channel-wrapper {
+              p {
+                margin: 0;
+                font-size: 12px;
+                line-height: 20px;
+                font-weight: 500;
+                color: var(--yt-clone-color-7);
+                @include media-min-md {
+                  font-size: 14px;
+                }
+                @include lineBreak(1);
+              }
+            }
+          }
+        }
+      }
+      .channel-videos-tab {
+        padding: 0 16px;
+        @include media-min-lg {
+          flex-direction: row;
+          padding: 0 32px;
+        }
+        @include media-min-xl {
+          flex-direction: row;
+          padding: 0 100px;
+        }
+        .video-wrapper {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(calc(100%), 1fr)) !important;
+          gap: 16px;
+          @include media-min-md {
+            grid-template-columns: repeat(auto-fill, minmax(calc(50% - 16px), 1fr)) !important;
+          }
+          @include media-min-lg {
+            grid-template-columns: repeat(auto-fill, minmax(calc(33.3% - 16px), 1fr)) !important;
+          }
+          @include media-min-alt(1500px) {
+            grid-template-columns: repeat(auto-fill, minmax(calc(25% - 16px), 1fr)) !important;
+          }
+        }
+      }
+    }
+  }
+}

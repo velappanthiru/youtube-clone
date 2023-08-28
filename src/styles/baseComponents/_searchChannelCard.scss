@@ -1,0 +1,99 @@
+.channel-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--yt-clone-color-20);
+  margin-bottom: 24px;
+  .channel-logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(30% - 0.25rem);
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+  }
+  .channel-content-wrapper {
+    width: calc(70% - 0.25rem);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    @include media-min-md {
+      flex-direction: row;
+      gap: 1rem;
+    }
+    .channel-content {
+      .channel-name-wrapper {
+        h3 {
+          margin: 0;
+          font-size: 16px;
+          line-height: 26px;
+          font-weight: 400;
+          color: var(--yt-clone-color-7);
+          @include media-min-sm {
+            font-size: 18px;
+          }
+        }
+      }
+      .metaData {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+        @include media-min-sm {
+          flex-direction: row;
+          gap: 8px;
+        }
+        .channel-yt-clone-user-id, .channel-subscribers-count {
+          margin: 0;
+          color: var(--yt-clone-color-18);
+          font-size: 12px;
+          line-height: normal;
+          font-weight: 400;
+          @include media-min-sm {
+            line-height: 26px;
+          }
+        }
+      }
+      p {
+        display: none;
+        @include media-min-sm {
+          display: block !important;
+          margin: 0;
+          color: var(--yt-clone-color-18);
+          font-size: 12px;
+          line-height: 26px;
+          font-weight: 400;
+          @include lineBreak(2);
+        }
+      }
+    }
+    .subscription-button {
+      .subscribe-btn {
+        padding: 0 16px;
+        height: 36px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        span {
+          font-size: 14px;
+          line-height: 36px;
+          font-weight: 500;
+          color: #fff;
+        }
+        &.subscribed {
+          background-color: #ff0000;
+        }
+        &.subscribe {
+          background-color: #0f0f0f;
+        }
+      }
+    }
+  }
+}
+

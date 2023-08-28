@@ -1,0 +1,303 @@
+.video-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px;
+  @include media-min-xl {
+    padding: 0;
+  }
+  h1 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: var(--yt-clone-color-5);
+    @include media-min-sm {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    @include lineBreak(2);
+  }
+  .channel-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+
+    @include media-min-xl {
+      flex-direction: row;
+      gap: 16px;
+    }
+    .owner-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      width: 100%;
+      @include media-min-xl {
+        justify-content: flex-start;
+        width: calc(50% - 16px);
+      }
+      .channel-wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        .channel-logo {
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .channel-name-wrapper {
+          display: flex;
+          flex-direction: column;
+          .channel-name {
+            display: flex;
+            align-items: flex-start;
+            gap: 4px;
+            h6 {
+              margin: 0;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 22px;
+              color: var(--yt-clone-color-5);
+              @include media-min-sm {
+                font-size: 16px;
+              }
+            }
+          }
+          span {
+            color: var(--yt-clone-color-9);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+          }
+        }
+      }
+      .subscribe-btn {
+        padding: 0 16px;
+        height: 36px;
+        border: 1px solid transparent;
+        border-radius: 18px;
+        span {
+          font-size: 14px;
+          line-height: 36px;
+          font-weight: 500;
+          color: #fff;
+        }
+        &.subscribed {
+          background-color: #ff0000;
+        }
+        &.subscribe {
+          background-color: #0f0f0f;
+        }
+      }
+    }
+    .action-button-wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      width: 100%;
+
+      @include media-min-xl {
+        width: calc(50% - 16px);
+      }
+      .inner-action-button-wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        width: 100%;
+        overflow-x: auto;
+        @include scroll-bar(0,0);
+        @include media-min-xl {
+          justify-content: flex-end;
+        }
+        .like-btn-wrapper {
+          display: flex;
+          align-items: flex-start;
+          .btn-like {
+            padding: 0 16px;
+            height: 36px;
+            border: 1px solid transparent;
+            background-color: var(--yt-clone-color-10);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            &.like-wrapper {
+              border-radius: 18px 0 0 18px;
+            }
+
+            &.dis-like-wrapper {
+              border-radius: 0 18px 18px 0;
+            }
+            &:hover {
+              background-color: var(--yt-clone-color-11);
+            }
+            span {
+              font-size: 14px;
+              line-height: 36px;
+              font-weight: 500;
+              color: var(--yt-clone-color-5);
+            }
+            .line {
+              width: 1px;
+              height: 15px;
+              background-color: rgba(0, 0, 0, 0.1);
+            }
+          }
+        }
+        .btn-action {
+          padding: 0 8px;
+          @include media-min-alt(360px) {
+            padding: 0 16px;
+          }
+          height: 36px;
+          border: 1px solid transparent;
+          border-radius: 18px;
+          background-color: var(--yt-clone-color-10);
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          &:hover {
+            background-color: var(--yt-clone-color-11);
+          }
+          span {
+            font-size: 14px;
+            line-height: 36px;
+            font-weight: 500;
+            color: var(--yt-clone-color-5);
+          }
+          .line {
+            width: 1px;
+            height: 15px;
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+        }
+        .more-btn {
+          width: 36px;
+          height: 36px;
+          background-color: var(--yt-clone-color-10);
+          border: 1px solid transparent;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            background-color: var(--yt-clone-color-11);
+          }
+        }
+      }
+    }
+  }
+  .video-desc {
+    background-color: var(--yt-clone-color-12);
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    .video-info {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      span {
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 20px;
+        color: var(--yt-clone-color-13);
+      }
+    }
+    .desc-wrapper {
+      display: flex;
+      flex-direction: column;
+      p {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--yt-clone-color-14);
+        &.lineBreak {
+          @include lineBreak(4);
+        }
+      }
+      span {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--yt-clone-color-14);
+      }
+    }
+  }
+  .channel-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .channel-name-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      .channel-logo {
+        width: 72px;
+        height: 72px;
+        border-radius: 50px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .channel-name {
+        width: calc(100% - 82px);
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        .name {
+          margin: 0;
+          font-size: 18px;
+          line-height: 26px;
+          font-weight: 700;
+          color: var(--yt-clone-color-13);
+        }
+        .subscribers_count {
+          margin: 0;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 400;
+          color: var(--yt-clone-color-13);
+        }
+      }
+    }
+    .action-button-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      @include media-min-xl {
+        width: 75%;
+      }
+      button {
+        border: 1px solid var(--yt-clone-color-15);
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 5px 16px;
+        border-radius: 50px;
+        width: calc(50% - 1rem);
+        span {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 26px;
+          color: var(--yt-clone-color-13);
+        }
+      }
+    }
+  }
+}
