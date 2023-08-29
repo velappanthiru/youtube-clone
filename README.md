@@ -10,6 +10,7 @@ This repository contains a YouTube clone project. Clone the popular social media
 3. Add the google youtube api key in env fille
 4. Install dependencies `npm install`
 5. start the project `npm start`
+6. Live URL: [Click Here](https://clone-v3-6ee9f.web.app)
 
 ## Tech Stack
 
