@@ -1,70 +1,62 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Youtube clone Application
 
-## Available Scripts
+This repository contains a YouTube clone project. Clone the popular social media platform YouTube, search videos, watch videos, and add comments to videos.
 
-In the project directory, you can run:
+## Quickstart
 
-### `npm start`
+1. Clone project using `https://github.com/velappanthiru/youtube-clone.git`
+2. Navigate into the project using `cd <Project-Folder-Name>`
+3. Add the google youtube api key in env fille
+4. Install dependencies `npm install`
+5. start the project `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Front End Languages:** 
 
-### `npm test`
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**CSS Preprocessor:** 
 
-### `npm run build`
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=flat&logo=SASS&logoColor=white)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Frameworks and Libraries:** 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=flat&logo=bootstrap&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=flat&logo=redux&logoColor=white) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat&logo=react-router&logoColor=white)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Hosting:** 
 
-### `npm run eject`
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=flat&logo=firebase)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Version Control:** 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=flat&logo=github&logoColor=white) 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Package Manager**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=flat&logo=npm&logoColor=white) 
 
-## Learn More
+## Docs
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Google Youtube Api v3 Doc](https://developers.google.com/youtube/v3/docs/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Phase 1
 
-### Code Splitting
+### Goals
+- Create Youtube Clone Web application using google youtube v3 api and firebase Authentication
+- Finally deploy the application using firebase
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Challenges Faced
 
-### Analyzing the Bundle Size
+#### API Integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Integrating Google YouTube v3 APIs into applications and handling asynchronous data fetching and data set redux faced some problems. It is helpful to learn the redux concept more clearly.
 
-### Making a Progressive Web App
+## Solutions and Learnings
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+While facing these challenges, I learned a great deal about React.js, front-end development best practices, and problem-solving in general. Each challenge provided an opportunity for growth, and I'm proud of the solutions I came up with to overcome them.
 
-### Advanced Configuration
+I hope that by sharing my experiences with these challenges, I can provide insight to fellow developers facing similar hurdles. If you have any questions or suggestions, feel free to open an issue or reach out!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy coding!
